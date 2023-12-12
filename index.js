@@ -19,3 +19,24 @@ function login(){
         alert("로그인 실패");
     }
 }
+
+var clock;
+
+window.onload = function(){
+    clock=document.getElementById("clock_box");
+    setInterval(x, 1000);  // 타이머 시작
+}
+
+// ㅇㅇㅇㅇ년 ㅇㅇ월 ㅇㅇ일 ㅇㅇ시 ㅇㅇ분 ㅇㅇ초 ㅇㅇㅇ 밀리초
+
+function x(){
+    var now = new Date();
+    var result = 
+        now.getFullYear() + "년 " 
+        + now.getMonth() + "월 "
+        + now.getDate() + "일 "
+        + now.getHours() + "시 "
+        + now.getMinutes() + "분 "
+        + now.getSeconds() + "초 ";
+    clock.innerHTML = result;
+}

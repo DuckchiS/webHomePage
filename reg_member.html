@@ -9,99 +9,101 @@
 </head>
 <body>
     <div id="box">
-        <div id="reg_member_box">
-            <form>
-                회원가입 페이지
-                <table>
-                    <tr>
-                        <td>아이디:</td>
-                        <td><input id="id" placeholder="아이디" size="14" minlength="4" maxlength="12" required><br></td>
-                    </tr>
-                    <tr>
-                        <td>암호:</td>
-                        <td><input id="pw" type="password" placeholder="6자리 이상 15이하 문자를 입력하세요." size="14" minlength="6" maxlength="15" required><br></td>
-                    </tr>
-                    <tr>
-                        <td>암호 재입력:</td>
-                        <td><input id="re_pw" type="password" placeholder="6자리 이상 15이하 문자를 입력하세요." size="14" minlength="6" maxlength="15" required><br></td>
-                    </tr>
-                    <tr>
-                        <td>이름:</td>
-                        <td><input id="name" type="name" placeholder="이름" size="14" minlength="2" maxlength="6" required><br></td>
-                    </tr>
-                    <tr>
-                        <td>이메일:</td>
-                        <td><input id="email" type="email" placeholder="이메일" size="14"><br></td>
-                    </tr>
-                    <tr>
-                        <td>생년월일:</td>
-                        <td> <input type="number" id="birth_y" value="1979" required>
-                            <select id="birth_m">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                            </select>
-                            <select id="birth_d">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                            </select><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>성별:</td>
-                        <td>
-                            <input type="radio" name="sex" value="M" checked>남성
-                            <input type="radio" name="sex" value="G">여성<br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>핸드폰 번호:</td>
-                        <td><input type="tel" id="tel_1" minlength="3" maxlength="3" value="010" required size="2"> -
-                            <input type="tel" id="tel_2" minlength="4" maxlength="4" required size="2"> -
-                            <input type="tel" id="tel_3" minlength="4" maxlength="4" required size="2"><br>
-                        </td>
-                    </tr>
-                </table>
-                <input type="button" onclick="check()" value="회원가입">
-            </form>
+        <div id="login_sign">
+            <div id="reg_member_box">
+                <form>
+                    회원가입 페이지
+                    <table>
+                        <tr>
+                            <td>아이디:</td>
+                            <td><input id="id" placeholder="아이디" size="14" minlength="4" maxlength="12" required><br></td>
+                        </tr>
+                        <tr>
+                            <td>암호:</td>
+                            <td><input id="pw" type="password" placeholder="6자리 이상 15이하 문자를 입력하세요." size="14" minlength="6" maxlength="15" required><br></td>
+                        </tr>
+                        <tr>
+                            <td>암호 재입력:</td>
+                            <td><input id="re_pw" type="password" placeholder="6자리 이상 15이하 문자를 입력하세요." size="14" minlength="6" maxlength="15" required><br></td>
+                        </tr>
+                        <tr>
+                            <td>이름:</td>
+                            <td><input id="name" type="name" placeholder="이름" size="14" minlength="2" maxlength="6" required><br></td>
+                        </tr>
+                        <tr>
+                            <td>이메일:</td>
+                            <td><input id="email" type="email" placeholder="이메일" size="14"><br></td>
+                        </tr>
+                        <tr>
+                            <td>생년월일:</td>
+                            <td> <input type="number" id="birth_y" value="1979" required>
+                                <select id="birth_m">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <select id="birth_d">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>성별:</td>
+                            <td>
+                                <input type="radio" name="sex" value="M" checked>남성
+                                <input type="radio" name="sex" value="G">여성<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>핸드폰 번호:</td>
+                            <td><input type="tel" id="tel_1" minlength="3" maxlength="3" value="010" required size="2"> -
+                                <input type="tel" id="tel_2" minlength="4" maxlength="4" required size="2"> -
+                                <input type="tel" id="tel_3" minlength="4" maxlength="4" required size="2"><br>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="button" onclick="check()" value="회원가입">
+                </form>
+            </div>
         </div>
     </div>
 </body>
