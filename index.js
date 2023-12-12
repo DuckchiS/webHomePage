@@ -3,11 +3,14 @@ var str_pw = "";
 var input_id;
 var input_pw;
 var divX;
+var clock;
 
 window.onload = function(){
     input_id = document.getElementById("id");
     input_pw = document.getElementById("pw");
     divX = document.getElementById("x");
+    clock=document.getElementById("clock_box");
+    setInterval(x, 1000);  // 타이머 시작
 }
 
 function login(){
@@ -19,15 +22,6 @@ function login(){
         alert("로그인 실패");
     }
 }
-
-var clock;
-
-window.onload = function(){
-    clock=document.getElementById("clock_box");
-    setInterval(x, 1000);  // 타이머 시작
-}
-
-// ㅇㅇㅇㅇ년 ㅇㅇ월 ㅇㅇ일 ㅇㅇ시 ㅇㅇ분 ㅇㅇ초 ㅇㅇㅇ 밀리초
 
 function x(){
     var now = new Date();
