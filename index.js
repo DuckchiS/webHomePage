@@ -33,7 +33,7 @@ function x(){
     var now = new Date();
     var result = 
         now.getFullYear() + "년 " 
-        + now.getMonth() + "월 "
+        + (now.getMonth() + 1) + "월 "
         + now.getDate() + "일 "
         + now.getHours() + "시 "
         + now.getMinutes() + "분 "
